@@ -121,3 +121,39 @@ header ul li a:hover {
     background-color: var(--corSecundaria);
     color: var(--corTerciaria);
 }
+
+.conteudo .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.conteudo .imgBox img {
+    max-width: 340px;
+}
+
+.sorvetes {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.sorvetes li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sorvetes li:hover {
+    transform: translateY(-15px);
+}
+
+.sorvetes li img {
+    max-width: 60px;
+}
