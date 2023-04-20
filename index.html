@@ -14,7 +14,7 @@
         <header>
             <a href="a"><img src="assets/logo.png" alt="logo" class="logo"></a>
             
-            <div class="toggle"></div>
+            <div class="toggle" onclick="toggleMenu();"></div>
 
             <ul class="links">
                 <li><a href="https://www.Starbucks.com.br/" target="_blank">Home</a></li>
@@ -40,16 +40,20 @@
         </div>
          
         <ul class="sorvetes">
-            <li><img src="assets/thumb1.png" alt="1"></li>
-            <li><img src="assets/thumb2.png" alt="2"></li>
-            <li><img src="assets/thumb3.png" alt="3"></li>
+            <li><img src="assets/thumb1.png" onclick="imgSlider('assets/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="assets/thumb2.png" onclick="imgSlider('assets/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="assets/thumb3.png" onclick="imgSlider('assets/img3.png');changeCircleColor('#d752b1')"></li>
         </ul>
-        <ul>
-            <li><a href="https://pt-br.facebook.com/" target="_blank"><img src="assets/facebook.png" alt="facebook"></a></li> 
+
+        <ul class="sociais">
+            <li><a href="https://www.facebook.com/Starbucks/?locale=pt_BR" target="_blank"><img src="assets/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://twitter.com/Starbucks" target="_blank"><img src="assets/twitter.png" alt="twitter"></a></li>
+            <li><a href="https://www.instagram.com/starbucks/" target="_blank"><img src="assets/instagram.png" alt="instagram"></a></li>
         </ul>
 
     </main>
 
+            <script src="mudar.js"></script>
 
 </body>
 </html>

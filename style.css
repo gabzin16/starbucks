@@ -157,3 +157,133 @@ header ul li a:hover {
 .sorvetes li img {
     max-width: 60px;
 }
+
+.sociais {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sociais li {
+    list-style: none;
+}
+
+.sociais li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.sociais li a:hover {
+    color: var(--corSecundaria);
+    filter: invert(0);
+}
+
+.circulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--corPrimaria);
+    clip-path: circle(600px at right 800px);
+}
+
+@media (max-width: 992px){
+    header{
+        padding: 20px;
+    }
+
+    header .logo {
+        max-width: 60px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(assets/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+
+    .toggle.active {
+        position: fixed;
+        right: 20px;
+        background: url(assets/close.png);
+        background-size: 25px;
+        background-position: 25px;
+        background-repeat: no-repeat;
+    }
+
+header ul.links.active {
+    position: fixed;
+    top: o;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    z-index: 10;
+}   
+
+header ul li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+}
+
+main {
+    padding: 20px 20px 120px;
+}
+
+.conteudo {
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.conteudo .textoPrincipal h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.conteudo .textoPrincipal {
+    max-width: 300px;
+}
+
+.conteudo.imgBox {
+    max-width: 300px;
+}
+
+.thumb li img {
+    max-width: 40px;
+}
+
+.circulo {
+    clip-path: circle(400px at center bottom);
+}
+
+.sociais {
+    background: var(--corPrimaria);
+    right: 0;
+    width: 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+}
